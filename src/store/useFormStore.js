@@ -34,6 +34,7 @@ export const useFormStore = create((set, get) => ({
   // Gerar script
   generateScript: () => {
     const { libraries, selectedLibraries } = get();
+    //lib => selectedLibraries.includes(lib.id): Para cada biblioteca, verifica se o ID dela está na lista de selecionados
     const selected = libraries.filter(lib => selectedLibraries.includes(lib.id));
     
     if (selected.length === 0) return '# Selecione pelo menos uma biblioteca';
