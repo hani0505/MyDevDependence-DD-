@@ -1,35 +1,31 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import {Acordion} from "./components/Acordion";
+import { ThemeToggle } from "./components/ThemToggle";
+import {MainForm} from './pages/MainForm'
+import { DivAnimated } from "./components/DivAnimated";
+import { FormGroup } from "./components/FormGroup";
 
 function App() {
-  const [count, setCount] = useState(0)
+
 
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+    <div className="min-h-screen bg-white dark:bg-gray-900 text-gray-900 dark:text-white transition-colors duration-200">
+      <header className="p-4 flex justify-between items-center bg-gray-100 dark:bg-gray-800">
+        <h1 className="text-xl font-bold">MyLibrary</h1>
+        <h1 className="text-xl font-bold text-slate-400">DevDependencies</h1>
+        <ThemeToggle />
+      </header>
+      
+      <main className="p-6">
+          <DivAnimated></DivAnimated>
+          <MainForm />
+      </main>
+
+
+ 
+
+
+    </div>
+  );
 }
 
-export default App
+export default App;
