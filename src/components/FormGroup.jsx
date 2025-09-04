@@ -21,7 +21,7 @@ const addLibrary = useFormStore(state => state.addLibrary)
         <form onSubmit={handleSubmit} className="space-y-3">
             <h2 className="font-bold mb-3">Adicionar nova biblioteca</h2>
             <label className="block text-sm font-medium mb-3"htmlFor="">Nome da Biblioteca</label>
-            <input className= "w-full p-2 border rounded dark:bg-slate-800 text-gray-300 text-opacity-60" type="text" placeholder="Ex: Numpy, React, Git" 
+            <input className= "text-zinc-900 w-full p-2 border rounded dark:bg-slate-800  dark:text-gray-300 text-opacity-60" type="text" placeholder="Ex: Numpy, React, Git" 
             value={name}
             onChange={(e) => setName(e.target.value)}
            
@@ -32,7 +32,7 @@ const addLibrary = useFormStore(state => state.addLibrary)
             value={command}
             onChange={(e) => setCommand(e.target.value)}
             placeholder="Digite um comando de instalação: ex NPM..."
-            className=" w-full p-2 border rounded dark:bg-slate-800 text-gray-300 text-opacity-60"
+            className="text-zinc-900 w-full p-2 border rounded dark:bg-slate-800  dark:text-gray-300 text-opacity-60"
             />
 
             <button type="submit"
