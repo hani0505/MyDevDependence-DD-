@@ -1,4 +1,4 @@
-import {Acordion} from "./components/Acordion";
+
 import { ThemeToggle } from "./components/ThemToggle";
 import {MainForm} from './pages/MainForm'
 import { DivAnimated } from "./components/DivAnimated";
